@@ -1,0 +1,63 @@
+Bootstrap Study Summary (500 samples, each of size 150)
+
+In this analysis, the full diabetes dataset (768 patients) was treated as the population.
+Using bootstrap sampling with replacement, we created 500 samples, each containing 150 observations.
+
+For each bootstrap sample, we calculated the following statistics for the variable BloodPressure:
+
+Mean
+
+Standard Deviation
+
+98th Percentile
+
+After computing these values for all 500 samples, we took the average of each statistic and compared them with the corresponding true population statistics.
+
+1. Mean Comparison
+
+The average bootstrap mean of BloodPressure was extremely close to the population mean.
+
+This shows that the sample mean is an unbiased estimator of the population mean when bootstrap sampling is used.
+
+Minor differences occur due to sampling variation, but the values remain highly consistent.
+
+2. Standard Deviation Comparison
+
+The average bootstrap standard deviation was also close to the population standard deviation.
+
+This indicates that bootstrapping provides a good approximation of the variability present in the population.
+
+Since SD is more sensitive to variation, a slightly larger difference compared to the mean is normal.
+
+3. 98th Percentile Comparison
+
+The average bootstrap 98th percentile was reasonably close to the population 98th percentile, but the difference was slightly larger than for mean and SD.
+
+This is expected because high percentiles are more sensitive to extreme values and require larger sample sizes to estimate accurately.
+
+Still, the bootstrap method performs well and gives an acceptable approximation.
+
+The bar charts comparing Population vs Bootstrap Averages for:
+
+Mean BloodPressure
+
+Standard Deviation
+
+98th Percentile
+
+all show that the bootstrap-derived values lie very close to the population values.
+This visually confirms that the bootstrap method successfully replicates population characteristics.
+
+Conclusion
+
+The bootstrap procedure (500 samples of size 150) produced average statistics that are very close to the true population values for BloodPressure.
+
+This demonstrates:
+
+Bootstrap sampling can effectively estimate statistical properties of the population.
+
+The sample mean and standard deviation are robust and reliable estimators.
+
+Higher percentiles (like the 98th) show more variability, but still approximate well.
+
+Overall, the bootstrap method is shown to be a powerful technique for estimating population statistics, even when sample sizes are moderate.
